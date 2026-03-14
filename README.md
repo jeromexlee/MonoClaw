@@ -1,30 +1,13 @@
 <p align="center">
-  <img src="assets/hero-banner.png" alt="MonoClaw" width="100%">
+    <img src="assets/title.png" alt="MonoClaw" width="100%">
 </p>
 
-<h1 align="center">MonoClaw</h1>
-
-<p align="center">
-  Turn Claude Code into a personal agent that remembers everything.
-</p>
-
-<p align="center">
-  <code>git clone &lt;this-repo&gt; && open in Claude Code</code>
-</p>
-
-<div align="center">
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Claude Code](https://img.shields.io/badge/Built_for-Claude_Code-blueviolet)](https://claude.ai)
-
-</div>
-
----
-
-Your AI agent is a genius with amnesia. Every session starts from zero — it doesn't know your architecture decisions, your meeting takeaways, your research findings, or the priorities you've been refining for months. You keep re-explaining. Nothing compounds.
+**MonoClaw** turns your monorepo into a personal AI assistant. Your AI coding agent(Claude Code, Codex, etc) is a genius with amnesia. Every session starts from zero — it doesn't know your architecture decisions, your meeting takeaways, your research findings, or the priorities you've been refining for months. You keep re-explaining. Nothing compounds.
 
 **This repo fixes that.** Clone it, open it in Claude Code, and it becomes a personal agent that accumulates knowledge across everything you do — not just coding, but research, meeting analysis, writing, decision-making. The 50th session is categorically different from the 5th.
+<p align="center">
+  <img src="assets/hero-banner.png" alt="MonoClaw" width="100%">
+</p>
 
 ## What It Looks Like
 

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.user.job-runner</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <!-- ⚠️ UPDATE THESE PATHS to match your environment -->
+        <string>/YOUR/PROJECT/PATH/.venv/bin/python</string>
+        <string>/YOUR/PROJECT/PATH/jobs/runner.py</string>
+        <string>--all-due</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <!-- ⚠️ UPDATE THIS PATH -->
+    <string>/YOUR/PROJECT/PATH</string>
+
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <!-- ⚠️ UPDATE THIS PATH -->
+    <string>/YOUR/PROJECT/PATH/jobs/logs/runner.log</string>
+
+    <key>StandardErrorPath</key>
+    <!-- ⚠️ UPDATE THIS PATH -->
+    <string>/YOUR/PROJECT/PATH/jobs/logs/runner-error.log</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <!-- ⚠️ UPDATE to include your tool paths (node, opencode/claude CLI, etc.) -->
+        <string>/usr/local/bin:/usr/bin:/bin:/YOUR/HOME/.local/bin</string>
+        <key>HOME</key>
+        <!-- ⚠️ UPDATE THIS -->
+        <string>/YOUR/HOME</string>
+    </dict>
+</dict>
+</plist>

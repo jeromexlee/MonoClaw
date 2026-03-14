@@ -1,0 +1,25 @@
+# Environment
+.env
+.venv/
+__pycache__/
+
+# Machine-local config
+jobs/config.yaml
+
+# Semantic search cache (rebuildable)
+.semantic_cache/
+
+# OS files
+.DS_Store
+
+# Job run outputs (large, machine-local)
+jobs/*/runs/
+
+# Job logs
+jobs/logs/
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*.swo

@@ -1,0 +1,16 @@
+name: memory-distill
+type: prompt
+enabled: false
+schedule: "sundays 20:00"
+description: "Distill past week's raw logs into curated knowledge (L1→L2)"
+timeout: 600
+prompt: |
+  Run the weekly memory distillation:
+  1. Read all files in memory/raw/ from the past 7 days
+  2. Read existing memory/curated/topics/ to check for duplicates
+  3. For each new insight: decide ADD (new), UPDATE (more detailed), or SKIP (already known)
+  4. Write weekly digest to memory/curated/YYYY-WNN.md
+  5. Append new entries to relevant topic files
+  6. Update memory/index.md "Recent Working Memory" section
+context_files:
+  - memory/index.md

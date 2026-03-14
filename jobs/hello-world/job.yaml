@@ -1,0 +1,7 @@
+name: hello-world
+type: script
+enabled: true
+script: main.py
+schedule: "daily 09:00"
+description: "Example job — prints hello world to verify the runner works"
+timeout: 30

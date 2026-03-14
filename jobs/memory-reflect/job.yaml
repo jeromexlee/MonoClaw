@@ -1,0 +1,19 @@
+name: memory-reflect
+type: prompt
+enabled: false
+schedule: "sundays 20:00"
+description: "Generate Layer 3 reflection proposal (user reviews .pending-reflection.md)"
+timeout: 600
+prompt: |
+  Run the monthly memory reflection:
+  1. Read past month's weekly digests (memory/curated/YYYY-WNN.md)
+  2. Read all topic files (memory/curated/topics/)
+  3. Read existing Layer 3 insight files (memory/insights/)
+  4. Read taxonomy (memory/insights/.taxonomy.md)
+  5. Identify recurring themes → NEW insight proposals
+  6. Identify outdated insights → UPDATE proposals
+  7. Write all proposals to memory/insights/.pending-reflection.md
+  8. Do NOT apply any changes directly — user must review first
+context_files:
+  - memory/index.md
+  - memory/insights/.taxonomy.md

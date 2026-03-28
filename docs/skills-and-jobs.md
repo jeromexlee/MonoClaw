@@ -11,7 +11,6 @@ Six pluggable capabilities included out of the box. Each is a `.claude/skills/<n
 | `meeting-analysis` | Seven-dimension framework: power structure, decision-maker attention, presenter strategy, bottleneck chains, hidden negotiations, diplomatic language, follow-up risks |
 | `doc-coauthoring` | Three-stage workflow: context gathering → section-by-section brainstorming/curation/drafting → reader testing with a fresh AI instance |
 | `semantic-search` | Embedding-based search across the knowledge base. Pre-filters large document sets before AI reads them. Requires OpenAI API key |
-| `claude-agents-sync` | Ensures every `CLAUDE.md` is paired with an `AGENTS.md` in the same directory |
 
 ### Add a Skill
 
